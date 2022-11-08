@@ -1,7 +1,12 @@
 import subprocess
 
 print(subprocess)
-def calling():
+def git_pull():
+    #Simply opening command prompt in Windows
+    subprocess.call("git status",shell=True )
+    subprocess.call("git pull",shell=True )
+
+def git_push():
 
     #Simply opening command prompt in Windows
     subprocess.call("git status",shell=True )
@@ -10,7 +15,8 @@ def calling():
     subprocess.call("git push",shell=True )
 
 def main():
-     calling()
+     git_pull()
+     git_push()
 
 if __name__ == "__main__":
     main()
